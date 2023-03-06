@@ -28,22 +28,23 @@
             <img src="https://avatars.githubusercontent.com/u/110963294?v=4" width="100px" />
         </a>
     </td>
-<!--    <td>
+    <td>
         <a href="https://github.com/hjun0917">
             <img src="https://avatars.githubusercontent.com/u/91590391?v=4" width="100px" />
         </a>
-    </td> -->
+    </td>
     <td>
         <a href="https://github.com/soogineer">
             <img src="https://avatars.githubusercontent.com/u/116775790?v=4" width="100px" />
         </a>
     </td>
+    
   </tr>
 
   <tr> 
     <td align="center"><a href="https://github.com/seunGit">민승기</a></td>
     <td align="center"><a href="https://github.com/suhjaesuk">서재석</a></td>
-<!--    <td align="center"><a href="https://github.com/hjun0917">김형준</a></td> -->
+    <td align="center"><a href="https://github.com/hjun0917">김형준</a></td>
     <td align="center"><a href="https://github.com/soogineer">노연수</a></td>
   </tr>
 </table>
@@ -58,7 +59,7 @@
 |||1|2|3|4|5|
 ||||||||
 |6|7|8|9|10|11|12|
-|승기 ✅ 재석 ✅<br> 연수 ✅|||||||
+|승기 ✅ 재석 ✅<br> 연수 ✅ 형준 ✅|||||||
 |13|14|15|16|17|18|19|
 ||||||||
 |20|21|22|23|24|25|26|
