@@ -1,10 +1,11 @@
 # 알고리즘 및 코딩 테스트 문제 풀이 💯
 > 알고리즘 및 코딩테스트 문제 풀이 스터디입니다.<br>
-> 1일 1알고리즘 문제 풀이를 하면서 실력을 키워 나갑니다.
+> 1일 1알고리즘 문제 풀이를 하면서 실력을 키워 나갑니다.<br>
+> 연이 끊기지 않는 이상 계속 됩니다.
 
 ## ⚖️ 스터디 규칙
-- 매주 월 ~ 금 오후 7시
-- 언어 : Java, JavaScript, Python, SQL
+- 1일 1문제, 주 5일
+- 언어 : Java, JavaScript, Python
 - 참고 사이트 : [백준](https://www.acmicpc.net/), [프로그래머스](https://programmers.co.kr/), [HackerRank](https://www.hackerrank.com/)
 - 알고리즘 문제 : [이것이 취업을 위한 코딩 테스트다 with Python](https://github.com/ndb796/python-for-coding-test)
 
@@ -38,7 +39,6 @@
             <img src="https://avatars.githubusercontent.com/u/116775790?v=4" width="100px" />
         </a>
     </td>
-    
   </tr>
 
   <tr> 
