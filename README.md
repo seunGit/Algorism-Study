@@ -6,6 +6,7 @@
 - 매주 월 ~ 금 오후 7시
 - 언어 : Java, JavaScript, Python, SQL
 - 참고 사이트 : [백준](https://www.acmicpc.net/), [프로그래머스](https://programmers.co.kr/), [HackerRank](https://www.hackerrank.com/)
+- 알고리즘 문제 : [이것이 취업을 위한 코딩 테스트다 with Python](https://github.com/ndb796/python-for-coding-test)
 
 
 ## 📖 스터디 방법
