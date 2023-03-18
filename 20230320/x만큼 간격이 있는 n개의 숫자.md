@@ -29,5 +29,11 @@ n은 1000 이하인 자연수입니다.
 **연수**
 
 ```python
+def solution(x,n):
+    answer = [] # 빈 list 선언
+
+    for i in range(1, n+1): # i = 1부터 n까지 반복 실행 (n번), range(n) = n전까지 반복문이 돌기 때문에 n+1 해줘야 함
+        answer.append(x*i) 
+    return answer
 
 ```
