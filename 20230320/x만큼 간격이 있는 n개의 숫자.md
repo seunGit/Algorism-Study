@@ -17,7 +17,11 @@ n은 1000 이하인 자연수입니다.
 **재석**
 
 ```python
-
+def solution(x, n): 
+    answer = []
+    for i in range(1,n+1): # i는 1부터 n까지
+        answer.append(i*x) 
+    return answer
 ```
 
 **승기**
