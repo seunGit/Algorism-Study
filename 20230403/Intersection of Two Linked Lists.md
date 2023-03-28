@@ -1,63 +1,23 @@
-https://leetcode.com/problems/intersection-of-two-linked-lists/
+https://www.acmicpc.net/problem/2346
 
-Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
+### **문제**
+1번부터 N번까지 N개의 풍선이 원형으로 놓여 있고. i번 풍선의 오른쪽에는 i+1번 풍선이 있고, 왼쪽에는 i-1번 풍선이 있다. 단, 1번 풍선의 왼쪽에 N번 풍선이 있고, N번 풍선의 오른쪽에 1번 풍선이 있다. 각 풍선 안에는 종이가 하나 들어있고, 종이에는 -N보다 크거나 같고, N보다 작거나 같은 정수가 하나 적혀있다. 이 풍선들을 다음과 같은 규칙으로 터뜨린다.
 
-For example, the following two linked lists begin to intersect at node c1:
+우선, 제일 처음에는 1번 풍선을 터뜨린다. 다음에는 풍선 안에 있는 종이를 꺼내어 그 종이에 적혀있는 값만큼 이동하여 다음 풍선을 터뜨린다. 양수가 적혀 있을 경우에는 오른쪽으로, 음수가 적혀 있을 때는 왼쪽으로 이동한다. 이동할 때에는 이미 터진 풍선은 빼고 이동한다.
 
-![image](https://user-images.githubusercontent.com/116775790/228139734-3c1d4641-9ae7-4533-84f9-35758602f2eb.png)
-The test cases are generated such that there are no cycles anywhere in the entire linked structure.
+예를 들어 다섯 개의 풍선 안에 차례로 3, 2, 1, -3, -1이 적혀 있었다고 하자. 이 경우 3이 적혀 있는 1번 풍선, -3이 적혀 있는 4번 풍선, -1이 적혀 있는 5번 풍선, 1이 적혀 있는 3번 풍선, 2가 적혀 있는 2번 풍선의 순서대로 터지게 된다.
 
-Note that the linked lists must retain their original structure after the function returns.
+### **입력**
+첫째 줄에 자연수 N(1 ≤ N ≤ 1,000)이 주어진다. 다음 줄에는 차례로 각 풍선 안의 종이에 적혀 있는 수가 주어진다. 종이에 0은 적혀있지 않다.
 
-Custom Judge:
+### **출력**
+첫째 줄에 터진 풍선의 번호를 차례로 나열한다.
 
-The inputs to the judge are given as follows (your program is not given these inputs):
-
-intersectVal - The value of the node where the intersection occurs. This is 0 if there is no intersected node.
-listA - The first linked list.
-listB - The second linked list.
-skipA - The number of nodes to skip ahead in listA (starting from the head) to get to the intersected node.
-skipB - The number of nodes to skip ahead in listB (starting from the head) to get to the intersected node.
-The judge will then create the linked structure based on these inputs and pass the two heads, headA and headB to your program. If you correctly return the intersected node, then your solution will be accepted.
-
-
-Example 1:
-![image](https://user-images.githubusercontent.com/116775790/228139891-b7e0c943-5cc4-4a85-80a5-b8f0ffddcb20.png)
-Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
-Output: Intersected at '8'
-Explanation: The intersected node's value is 8 (note that this must not be 0 if the two lists intersect).
-From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.
-- Note that the intersected node's value is not 1 because the nodes with value 1 in A and B (2nd node in A and 3rd node in B) are different node references. In other words, they point to two different locations in memory, while the nodes with value 8 in A and B (3rd node in A and 4th node in B) point to the same location in memory.
-
-Example 2:
-![image](https://user-images.githubusercontent.com/116775790/228140006-fe6f4c85-0c57-4e23-aa14-b2bdba48d395.png)
-
-Input: intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
-Output: Intersected at '2'
-Explanation: The intersected node's value is 2 (note that this must not be 0 if the two lists intersect).
-From the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.
-
-Example 3:
-![image](https://user-images.githubusercontent.com/116775790/228140111-581ca736-41d8-4e50-a924-1afe97b6397e.png)
-
-Input: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
-Output: No intersection
-Explanation: From the head of A, it reads as [2,6,4]. From the head of B, it reads as [1,5]. Since the two lists do not intersect, intersectVal must be 0, while skipA and skipB can be arbitrary values.
-Explanation: The two lists do not intersect, so return null.
-
-Constraints:
-
-- The number of nodes of listA is in the m.
-- The number of nodes of listB is in the n.
-- 1 <= m, n <= 3 * 104
-- 1 <= Node.val <= 105
-- 0 <= skipA < m
-- 0 <= skipB < n
-- intersectVal is 0 if listA and listB do not intersect.
-- intersectVal == listA[skipA] == listB[skipB] if listA and listB intersect.
- 
-
-Follow up: Could you write a solution that runs in O(m + n) time and use only O(1) memory?
+#### **예제 입력 1**
+5
+3 2 1 -3 -1
+예제 출력 1 
+1 4 5 3 2
 
 ### **풀이**
 
